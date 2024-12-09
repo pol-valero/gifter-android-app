@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+            android:id="@+id/msgHistory_tvContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:minWidth="25dp"
+            android:maxWidth="360dp"
+            android:paddingRight="10dp"
+            android:paddingLeft="10dp"
+            android:paddingBottom="10dp"
+            android:background="@drawable/receiver_message_background"
+            android:gravity="left"
+            android:text="@string/list_item_message_receiver_sampletext"
+            android:textSize="15sp"
+            android:textColor="@color/pastel"
+            android:fontFamily="@font/catamaran"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="15dp"/>
+
+    <ImageView
+            android:layout_width="20dp"
+            android:layout_height="15dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/receiver_pop"
+            app:layout_constraintTop_toBottomOf="@+id/msgHistory_tvContent"
+            android:id="@+id/imageView3"
+            app:layout_constraintStart_toStartOf="@+id/msgHistory_tvContent"/>
+    <TextView
+            android:id="@+id/msgHistory_tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-6dp"
+            android:gravity="left"
+            android:text="@string/list_item_message_receiver_time"
+            android:textSize="12sp"
+            android:textColor="@color/light_gray"
+            android:fontFamily="@font/catamaran"
+            app:layout_constraintTop_toBottomOf="@+id/msgHistory_tvContent"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

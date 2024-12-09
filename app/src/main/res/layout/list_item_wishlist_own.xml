@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android = "http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:layout_width = "match_parent"
+    android:layout_height = "70dp">
+
+    <TextView
+            android:id="@+id/wishlist_own_tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="5dp"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/list_item_wishlist_title"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/catamaran_bold"
+            app:layout_constraintStart_toEndOf="@+id/wishlist_own_ivPicture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/wishlist_own_bRemove"/>
+
+    <View
+            android:id="@+id/wishlist_own_vColor"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/squircle"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"/>
+    <ImageView
+            android:id="@+id/wishlist_own_ivPicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/giftr_shadow"
+            android:layout_marginStart="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+            android:id="@+id/wishlist_own_tvDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:text="@string/list_item_wishlist_description"
+            android:textSize="13sp"
+            android:gravity="left"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:textColor="@color/dark_gray"
+            android:fontFamily="arial"
+            app:layout_constraintStart_toEndOf="@+id/wishlist_own_ivPicture"
+            app:layout_constraintTop_toBottomOf="@+id/wishlist_own_tvTitle"
+            app:layout_constraintEnd_toStartOf="@+id/wishlist_own_bRemove"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintVertical_bias="0.0"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="-3dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/wishlist_own_bEdit"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="@string/edit"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/option_button"
+            android:textColor="@color/pastel"
+            android:stateListAnimator="@null"
+            android:fontFamily="@font/catamaran_black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <ImageButton
+            android:id="@+id/wishlist_own_bRemove"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/bin"
+            app:layout_constraintEnd_toStartOf="@+id/wishlist_own_bEdit"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="5dp"/>
+    <View
+            android:id="@+id/wishlist_own_vDivider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="80dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

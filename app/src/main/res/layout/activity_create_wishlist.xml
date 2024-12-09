@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/createwishlist_tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="0dp"
+            android:text="@string/create_wishlist"
+            android:textSize="20dp"
+            android:fontFamily="@font/catamaran_black"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <View
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/squircle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createwishlist_tvTitle" />
+
+    <ImageView
+            android:id="@+id/createwishlist_ivImage"
+            android:layout_width="170dp"
+            android:layout_height="170dp"
+            app:srcCompat="@drawable/giftr_shadow"
+            app:layout_constraintTop_toBottomOf="@+id/createwishlist_tvTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="30dp"
+            app:layout_constraintHorizontal_bias="0.501"/>
+
+    <EditText
+            android:id="@+id/createwishlist_etName"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/register_hint_name"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createwishlist_ivImage"
+            android:textColor="@color/light_gray"
+            android:backgroundTint="@color/light_gray"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <EditText
+            android:id="@+id/createwishlist_etDescription"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/register_hint_description"
+            android:inputType="textPersonName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createwishlist_etName"
+            android:textColor="@color/light_gray"
+            android:backgroundTint="@color/light_gray"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <EditText
+            android:id="@+id/createwishlist_etDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:ems="10"
+            android:hint="@string/register_hint_date"
+            android:inputType="none"
+            android:focusable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/createwishlist_etDescription"
+            android:textColor="@color/light_gray"
+            android:backgroundTint="@color/light_gray"
+            android:textColorHint="@color/light_gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            android:layout_marginTop="25dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/createwishlist_bCreate"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:text="@string/create_wishlist"
+            android:textSize="25sp"
+            android:textAllCaps="false"
+            android:background="@drawable/round_pink_button"
+            android:textColor="@color/pastel"
+            android:stateListAnimator="@null"
+            android:fontFamily="@font/catamaran_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            android:layout_marginBottom="5dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

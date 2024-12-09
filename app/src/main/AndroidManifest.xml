@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.READ_CALENDAR" />
+    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/Main"
+        tools:targetApi="31">
+        <activity
+            android:name=".presentation.FullScreenActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.AllProductsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.OtherWishlistGiftsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.EditProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.mainFragments.profile.friendsList.FriendsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.mainFragments.messages.messageHistory.MessageHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.mainFragments.profile.NotFriendProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.mainFragments.profile.FriendProfileActivity"
+            android:exported="false"
+            android:label="@string/title_activity_friend_profile" />
+        <activity
+            android:name=".presentation.mainFragments.search.friendrequests.FriendRequestsActivity"
+            android:exported="false" /> <!-- This activity has the soft input so that the keyboard overlaps the bottom menu -->
+        <activity
+            android:name=".presentation.MainMenuActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".presentation.LoginActivity"
+            android:exported="true"
+            android:theme="@style/Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".presentation.RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Login" />
+        <activity
+            android:name=".presentation.CreateWishlistActivity"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.EditWishlistActivity"
+            android:exported="false"
+            android:theme="@style/Main" />
+        <activity
+            android:name=".presentation.CreateProductActivity"
+            android:exported="false"
+            android:theme="@style/Main" />
+        <activity
+            android:name=".presentation.MyWishlistGiftsActivity"
+            android:exported="false"
+            android:theme="@style/Main" />
+        <activity
+            android:name=".presentation.EditProductActivity"
+            android:exported="false"
+            android:theme="@style/Main" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

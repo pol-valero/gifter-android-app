@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true"
+    tools:context=".presentation.mainFragments.messages.messageHistory.MessageHistoryActivity">
+
+    <TextView
+            android:text="@string/activity_message_history_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/msgHistory_tvUserName"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/catamaran_bold"
+            app:layout_constraintStart_toEndOf="@+id/msgHistory_ivProfilePicture"
+            android:layout_marginStart="15dp"
+            app:layout_constraintTop_toTopOf="@+id/msgHistory_ivProfilePicture"
+            app:layout_constraintBottom_toBottomOf="@+id/msgHistory_ivProfilePicture"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="15dp"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/msgHistory_ivProfilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="5dp"/>
+
+    <View
+            android:id="@+id/msgHistory_vDivider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintTop_toBottomOf="@+id/msgHistory_ivProfilePicture"
+            android:layout_marginTop="10dp"
+            app:layout_constraintHorizontal_bias="1.0"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgHistory_rvMessages"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/msgHistory_etWriteMessage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/msgHistory_vDivider" />
+
+    <ImageView
+            android:background="@drawable/smoothscrollbottom"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="-1px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintBottom_toTopOf="@+id/msgHistory_bSendMessage"/>
+
+    <View
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:background="@drawable/squircle_line"
+            android:hint="@string/search_users"
+            android:textColorHint="@color/light_gray"
+            android:textColor="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/msgHistory_bSendMessage" android:id="@+id/view3"/>
+
+    <com.example.giftr.presentation.components.CustomEditText
+            android:id="@+id/msgHistory_etWriteMessage"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:background="@color/transparent"
+            android:hint="@string/activity_message_history_hint"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/view3"
+            app:layout_constraintStart_toStartOf="@+id/view3" android:autofillHints=""
+            app:layout_constraintTop_toTopOf="@+id/view3" app:layout_constraintEnd_toEndOf="@+id/view3"/>
+
+    <ImageButton
+        android:id="@+id/msgHistory_bSendMessage"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/round_pink_button"
+        android:src="@drawable/send"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/activity_message_history_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

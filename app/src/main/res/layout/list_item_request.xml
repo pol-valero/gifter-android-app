@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/request_ivProfilePicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_launcher_background"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="15dp"/>
+
+    <TextView
+            android:text="@string/list_item_request_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/request_tvName"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/catamaran_bold"
+            android:layout_marginStart="15dp"
+            app:layout_constraintStart_toEndOf="@+id/request_ivProfilePicture"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/request_bRejectRequest"
+            android:layout_marginEnd="15dp"/>
+
+    <ImageButton
+            android:id="@+id/request_bRejectRequest"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/reject"
+            app:layout_constraintEnd_toStartOf="@+id/request_bAcceptRequest"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/request_bAcceptRequest"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:text="@string/accept"
+            android:textSize="15sp"
+            android:textAllCaps="false"
+            android:background="@drawable/option_pink_button"
+            android:textColor="@color/pastel"
+            android:stateListAnimator="@null"
+            android:fontFamily="@font/catamaran_black"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

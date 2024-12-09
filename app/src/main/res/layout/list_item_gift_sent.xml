@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/sentGift_ivUserPicture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sentGift_ivItemPicture"
+            android:layout_marginStart="-20dp"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/sentGift_ivItemPicture"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_marginStart="15dp"
+            android:padding="5dp"
+            android:src="@drawable/gift_logo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:shapeAppearanceOverlay="@style/RoundedSquare"
+            app:strokeColor="@color/pastel"
+            app:strokeWidth="4dp"
+            app:layout_constraintTop_toTopOf="@+id/sentGift_ivUserPicture"
+            app:layout_constraintBottom_toBottomOf="@+id/sentGift_ivUserPicture"/>
+
+
+    <TextView
+            android:id="@+id/sentGift_tvUserName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:text="@string/list_item_gift_sent"
+            android:textSize="17sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/catamaran_bold"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sentGift_ivUserPicture"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+            android:id="@+id/sentGift_tvWishlistName"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:gravity="left"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:fontFamily="arial"
+            android:text="@string/list_item_gift_sent_textview"
+            android:textColor="@color/dark_gray"
+            android:textSize="13sp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            app:layout_constraintTop_toBottomOf="@+id/sentGift_tvUserName" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/sentGift_ivUserPicture"/>
+    <View
+            android:id="@+id/sentGift_vDivider"
+            android:layout_width="0dp"
+            android:layout_height="0.5dp"
+            android:background="@color/light_gray"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="15dp"
+            android:layout_marginStart="125dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

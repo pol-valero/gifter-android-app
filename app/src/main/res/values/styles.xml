@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="changesApplied">
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">18sp</item>
+        <item name="stColorBackground">@color/main_color</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stLength">LONG</item>
+        <item name="stRadius">8dp</item>
+        <item name="stIconStart">@drawable/giftr</item>
+    </style>
+
+    <style name="toastApp">
+        <item name="stTextColor">#FFFFFF</item>
+        <item name="stTextSize">18sp</item>
+        <item name="stColorBackground">@color/main_color</item>
+        <item name="stStrokeWidth">3dp</item>
+        <item name="stRadius">8dp</item>
+        <item name="stIconStart">@drawable/giftr_shadow</item>
+    </style>
+
+    <style name="CustomDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowBackground">@color/pastel</item>
+        <item name="colorAccent">@color/main_color</item>
+        <item name="android:textColorPrimary">@color/light_gray</item>
+        <item name="android:textColorPrimaryInverse">@color/pastel</item>
+        <item name="android:textColorSecondaryInverse">@color/pastel</item>
+        <item name="android:buttonBarPositiveButtonStyle">@style/CustomButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/CustomButtonStyle</item>
+    </style>
+
+    <style name="CustomButtonStyle" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@color/main_color</item>
+    </style>
+
+
+</resources>

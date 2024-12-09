@@ -1,0 +1,206 @@
+<resources>
+    <string name="app_name">Giftr</string>
+    <string name="create_wishlist">Create Wishlist</string>
+    <string name="edit_wishlist">Edit Wishlist</string>
+    <string name="remove">Remove</string>
+    <string name="edit">Edit</string>
+    <string name="accept">Accept</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="edit_profile">Edit profile</string>
+    <string name="friends">Friends</string>
+    <string name="request_friendship">Request friendship</string>
+    <string name="reserves">Reserves</string>
+    <string name="wishlists">Wishlists</string>
+    <string name="wishlist">Wishlist</string>
+    <string name="sent_gifts">Sent gifts</string>
+    <string name="home_title">My Wishlists</string>
+    <string name="messages_title">Messages</string>
+    <string name="register_title">Sign Up</string>
+    <string name="register_hint_name">Name</string>
+    <string name="register_hint_lastName">Last Name</string>
+    <string name="register_hint_email">Email</string>
+    <string name="register_hint_description">Description</string>
+    <string name="register_hint_date">Date</string>
+    <string name="register_hint_password">Password</string>
+    <string name="register_hint_repeat_password">Repeat Password</string>
+    <string name="register_button_signup">Sign up</string>
+    <string name="register_error_message">Default Error Message</string>
+    <string name="login_title">Sign in</string>
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_button_login">Login</string>
+    <string name="login_text_newUser">New in here?</string>
+    <string name="login_button_signup">Sign up</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_friend_profile">FriendProfileActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="search">Search</string>
+    <string name="search_users">Search users</string>
+    <string name="apply_changes">Apply changes</string>
+    <string name="toast_changed_applied">Changes applied</string>
+    <string name="toast_already_friend_request">Friend request already sent</string>
+    <string name="toast_no_connection">No connection with API</string>
+
+    <string name="lorem_ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in scelerisque sem. Mauris
+        volutpat, dolor id interdum ullamcorper, risus dolor egestas lectus, sit amet mattis purus
+        dui nec risus. Maecenas non sodales nisi, vel dictum dolor. Class aptent taciti sociosqu ad
+        litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse blandit eleifend
+        diam, vel rutrum tellus vulputate quis. Aliquam eget libero aliquet, imperdiet nisl a,
+        ornare ex. Sed rhoncus est ut libero porta lobortis. Fusce in dictum tellus.\n\n
+        Suspendisse interdum ornare ante. Aliquam nec cursus lorem. Morbi id magna felis. Vivamus
+        egestas, est a condimentum egestas, turpis nisl iaculis ipsum, in dictum tellus dolor sed
+        neque. Morbi tellus erat, dapibus ut sem a, iaculis tincidunt dui. Interdum et malesuada
+        fames ac ante ipsum primis in faucibus. Curabitur et eros porttitor, ultricies urna vitae,
+        molestie nibh. Phasellus at commodo eros, non aliquet metus. Sed maximus nisl nec dolor
+        bibendum, vel congue leo egestas.\n\n
+        Sed interdum tortor nibh, in sagittis risus mollis quis. Curabitur mi odio, condimentum sit
+        amet auctor at, mollis non turpis. Nullam pretium libero vestibulum, finibus orci vel,
+        molestie quam. Fusce blandit tincidunt nulla, quis sollicitudin libero facilisis et. Integer
+        interdum nunc ligula, et fermentum metus hendrerit id. Vestibulum lectus felis, dictum at
+        lacinia sit amet, tristique id quam. Cras eu consequat dui. Suspendisse sodales nunc ligula,
+        in lobortis sem porta sed. Integer id ultrices magna, in luctus elit. Sed a pellentesque
+        est.\n\n
+        Aenean nunc velit, lacinia sed dolor sed, ultrices viverra nulla. Etiam a venenatis nibh.
+        Morbi laoreet, tortor sed facilisis varius, nibh orci rhoncus nulla, id elementum leo dui
+        non lorem. Nam mollis ipsum quis auctor varius. Quisque elementum eu libero sed commodo. In
+        eros nisl, imperdiet vel imperdiet et, scelerisque a mauris. Pellentesque varius ex nunc,
+        quis imperdiet eros placerat ac. Duis finibus orci et est auctor tincidunt. Sed non viverra
+        ipsum. Nunc quis augue egestas, cursus lorem at, molestie sem. Morbi a consectetur ipsum, a
+        placerat diam. Etiam vulputate dignissim convallis. Integer faucibus mauris sit amet finibus
+        convallis.\n\n
+        Phasellus in aliquet mi. Pellentesque habitant morbi tristique senectus et netus et
+        malesuada fames ac turpis egestas. In volutpat arcu ut felis sagittis, in finibus massa
+        gravida. Pellentesque id tellus orci. Integer dictum, lorem sed efficitur ullamcorper,
+        libero justo consectetur ipsum, in mollis nisl ex sed nisl. Donec maximus ullamcorper
+        sodales. Praesent bibendum rhoncus tellus nec feugiat. In a ornare nulla. Donec rhoncus
+        libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
+        vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
+    </string>
+    <string name="not_friends">You are not friends with this user</string>
+    <string name="send_message">Send message</string>
+    <string name="list_item_wishlist_title">Title goes here</string>
+    <string name="list_item_wishlist_description">Description goes here</string>
+    <string name="wishlist_friend_title">Title goes here</string>
+    <string name="wishlist_friend_description">Description goes here</string>
+    <string name="lit_item_users_title">TextView</string>
+    <string name="list_item_request_title">TextView</string>
+    <string name="list_item_recent_messages_title">Title goes here</string>
+    <string name="list_item_recent_messages_description">Description goes here</string>
+    <string name="list_item_recent_messages_hour">HourView</string>
+    <string name="list_item_other_gift_title">Title goes here</string>
+    <string name="list_item_other_gift_priority">Priority:</string>
+    <string name="list_item_other_gift_description">Description goes here</string>
+    <string name="list_item_other_gift_cost">100,69€</string>
+    <string name="list_item_other_gift_textview">TextView</string>
+    <string name="list_item_other_gift_button">Book</string>
+    <string name="list_item_message_sampletext">Sample Text</string>
+    <string name="list_item_message_sender_time">Time</string>
+    <string name="list_item_message_receiver_sampletext">Sample Text</string>
+    <string name="list_item_message_receiver_time">Time</string>
+    <string name="list_item_gift_sent">Sent gift to</string>
+    <string name="list_item_gift_wishlist">Wishlist:</string>
+    <string name="list_item_gift_sent_textview">TextView</string>
+    <string name="list_item_gift_sent_textview2">TextView</string>
+    <string name="list_item_gift_sent_gift">Gift:</string>
+    <string name="list_item_gift_sent_textview3">TextView</string>
+    <string name="list_item_gift_title">Title goes here</string>
+    <string name="list_item_gift_priority">Priority:</string>
+    <string name="list_item_gift_description">Description goes here</string>
+    <string name="list_item_gift_price">100,69€</string>
+    <string name="list_item_gift_textview">TextView</string>
+    <string name="list_item_gift_button">Button</string>
+    <string name="list_item_friends_textview">TextView</string>
+    <string name="fragment_wishlist_wishlists">wishlists</string>
+    <string name="fragment_profile_username">Username</string>
+    <string name="fragment_profile_variable">\?</string>
+    <string name="other_wishlist_gifts_tv1">TextView</string>
+    <string name="other_wishlist_gifts_tv2">TextView</string>
+    <string name="other_wishlist_gifts_tv3">TextView</string>
+    <string name="other_wishlist_gifts_enddate">End date:</string>
+    <string name="other_wishlist_gifts_description">Description:</string>
+    <string name="not_friend_profile_variable">\?</string>
+    <string name="not_friend_profile">Username</string>
+    <string name="mywishlist_gifts_title">My wishlisht -</string>
+    <string name="mywishlist_gifts_button">Add gift</string>
+    <string name="mywishlist_gifts_textvierw">TextView</string>
+    <string name="mywishlist_gift_description">Description:</string>
+    <string name="activity_mywishlist_gifts">TextView</string>
+    <string name="activity_message_history_textview">TextView</string>
+    <string name="activity_message_history_hint">Write your message</string>
+    <string name="activity_message_history_button">Button Icon</string>
+    <string name="friend_profile_username">Username</string>
+    <string name="friend_profile_variable">\?</string>
+    <string name="create_product_name">Name</string>
+    <string name="create_product_description">Description</string>
+    <string name="create_product_link">Link</string>
+    <string name="create_product_price">Price</string>
+    <string name="create_product_title">Create product</string>
+    <string name="create_product_button">Create product</string>
+    <string name="add_gift">Add gift</string>
+    <string name="bookings">Bookings</string>
+    <string name="create_product">Create product</string>
+    <string name="link">Link</string>
+    <string name="price">Price</string>
+    <string name="book">Book</string>
+    <string name="unnamed_user">Unnamed User</string>
+    <string name="not_booked">Not booked</string>
+    <string name="booked">Booked</string>
+    <string name="book_gift">Book gift</string>
+    <string name="edit_product_title">Edit product</string>
+    <string name="edit_product">Edit product</string>
+    <string name="products_addedGift">New gift added</string>
+    <string name="list_item_product_add">Add</string>
+    <string name="list_item_product_description">Description goes here</string>
+    <string name="list_item_product_price">420,69€</string>
+    <string name="list_item_product_title">Title goes here</string>
+    <string name="email_not_valid">Email is not valid</string>
+    <string name="some_fields_empty">Some fields are empty</string>
+    <string name="missing_field">Missing field</string>
+    <string name="email_already_registered">Email already registered</string>
+    <string name="field_required">This field is required</string>
+    <string name="passwords_not_match">Passwords do not match</string>
+    <string name="password_not_valid">Password must be 8 characters long with one lower or uppercase and one number.</string>
+    <string name="password_or_email_not_valid">Password or Email are not valid</string>
+    <string name="gift_modified">Gift modified successfully</string>
+    <string name="product_modified">Product modified successfully</string>
+    <string name="product_created">Product created successfully</string>
+    <string name="gallery_select_picture">Select Picture</string>
+    <string name="wishlist_ended">ended</string>
+    <string name="wishlist_ends_on">ends on</string>
+    <string name="calendar_saveWishlist">Save your Wishlist</string>
+    <string name="calendar_askForConfirmation">Would you like to open the Calendar Application to save your Wishlist?</string>
+    <string name="calendar_accept">Yes</string>
+    <string name="calendar_deny">No</string>
+    <string name="price_format_invalid">Price format is not valid</string>
+    <string name="wishlist_expired">Wishlist has expired, booking is not allowed</string>
+    <string name="gift_already_booked">Gift is already booked</string>
+    <string name="dialog_priority">Please enter an integer between 0 and 100</string>
+    <string name="dialog_gift_priority">Choose your gift\'s priority</string>
+    <string name="dialog_priority_bounds">Remember: 0 = lowest … 100 = highest</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_add_gift">Add Gift</string>
+    <string name="dialog_remove_friend_title">Remove friend confirmation</string>
+    <string name="dialog_remove_friend_request_title">Reject friend request confirmation</string>
+    <string name="dialog_confirmation">Do you want to proceed?</string>
+    <string name="wishlist_from">From</string>
+    <string name="wishlist_apostrof">\'s</string>
+    <string name="wishlist_wishlist">wishlist</string>
+    <string name="dialog_wishlist_delete">Wishlist delete confirmation</string>
+    <string name="time_comma">,</string>
+    <string name="gifts_remove_all">Remove all the gifts first</string>
+    <string name="expired_wishlist">(expired)</string>
+    <string name = "products_add_gift">Add gift</string>
+    <string name = "products_create_product">Create product</string>
+    <string name = "mywishlist_end_date">End date</string>
+    <string name = "item_gift_title">Title goes here</string>
+    <string name = "list_item_description">Description goes here</string>
+    <string name = "list_item_default_price">420,69€</string>
+    <string name = "list_item_default_priority">999</string>
+    <string name = "list_item_gift">Description goes here</string>
+    <string name = "item_product_title">Title goes here</string>
+</resources>

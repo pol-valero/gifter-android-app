@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp">
+
+    <TextView
+        android:id="@+id/myWishlistgifts_tvGiftName"
+        android:layout_width="0dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="50dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/catamaran_bold"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="@string/item_gift_title"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toStartOf="@+id/myWishlistgifts_tvPrice"
+        app:layout_constraintStart_toEndOf="@+id/myWishlistgifts_ivGiftImg"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/myWishlistgifts_tvPrice"
+        android:layout_width="90dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/catamaran_bold"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text="420,69€"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/myWishlistgifts_ivGiftImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:src="@drawable/gift_logo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:shapeAppearanceOverlay="@style/RoundedSquare" app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:src="@drawable/fire"
+        app:layout_constraintEnd_toEndOf="@+id/myWishlistgifts_ivGiftImg"
+        app:layout_constraintBottom_toBottomOf="@+id/myWishlistgifts_ivGiftImg"
+        android:layout_marginBottom="-5dp"
+        android:layout_marginEnd="-5dp"
+        android:id="@+id/imageView69"/>
+
+    <TextView
+        android:id="@+id/myWishlistgifts_tvGiftPriority"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:maxLines="1"
+        android:text="999"
+        android:textSize="10sp"
+        android:textColor="@color/pastel"
+        android:fontFamily="@font/catamaran_bold"
+        app:layout_constraintTop_toTopOf="@+id/imageView69"
+        app:layout_constraintEnd_toEndOf="@+id/imageView69"
+        app:layout_constraintStart_toStartOf="@+id/imageView69"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView69"/>
+    <TextView
+        android:id="@+id/myWishlistgifts_tvGiftDescription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/list_item_description"
+        android:textSize="13sp"
+        android:gravity="left"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textColor="@color/dark_gray"
+        android:fontFamily="arial"
+        app:layout_constraintTop_toBottomOf="@+id/myWishlistgifts_tvGiftName"
+        app:layout_constraintStart_toEndOf="@+id/myWishlistgifts_ivGiftImg"
+        app:layout_constraintEnd_toStartOf="@+id/myWishlistgifts_bRemoveGift"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="5dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/myWishlistgifts_bBooked"
+        android:layout_width="110dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/option_button"
+        android:fontFamily="@font/catamaran_black"
+        android:stateListAnimator="@null"
+        android:text="@string/not_booked"
+        android:textAllCaps="false"
+        android:textColor="@color/pastel"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myWishlistgifts_tvPrice" />
+
+    <ImageButton
+        android:id="@+id/myWishlistgifts_bRemoveGift"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/myWishlistgifts_bBooked"
+        app:layout_constraintTop_toTopOf="@+id/myWishlistgifts_bBooked"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
